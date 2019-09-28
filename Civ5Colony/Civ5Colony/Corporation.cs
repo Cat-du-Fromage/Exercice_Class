@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Civ5Colony
 
 {
-    class Corporation
+    public class Corporation
     {
         #region Attributes
         private string _name;

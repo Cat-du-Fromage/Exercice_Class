@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\Jeux\\vox populis\\DLL\\Test Projet\\Civ5Colony\\Civ5Colony\\Civ5Colony.csproj": {}
+    "G:\\Jeux\\vox populis\\DLL\\ProjetGitKraken\\Cours\\Exercice_Class\\Civ5Colony\\Civ5Colony\\Civ5Colony.csproj": {}
   },
   "projects": {
-    "G:\\Jeux\\vox populis\\DLL\\Test Projet\\Civ5Colony\\Civ5Colony\\Civ5Colony.csproj": {
+    "G:\\Jeux\\vox populis\\DLL\\ProjetGitKraken\\Cours\\Exercice_Class\\Civ5Colony\\Civ5Colony\\Civ5Colony.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Jeux\\vox populis\\DLL\\Test Projet\\Civ5Colony\\Civ5Colony\\Civ5Colony.csproj",
+        "projectUniqueName": "G:\\Jeux\\vox populis\\DLL\\ProjetGitKraken\\Cours\\Exercice_Class\\Civ5Colony\\Civ5Colony\\Civ5Colony.csproj",
         "projectName": "Civ5Colony",
-        "projectPath": "G:\\Jeux\\vox populis\\DLL\\Test Projet\\Civ5Colony\\Civ5Colony\\Civ5Colony.csproj",
+        "projectPath": "G:\\Jeux\\vox populis\\DLL\\ProjetGitKraken\\Cours\\Exercice_Class\\Civ5Colony\\Civ5Colony\\Civ5Colony.csproj",
         "packagesPath": "C:\\Users\\Florian\\.nuget\\packages\\",
-        "outputPath": "G:\\Jeux\\vox populis\\DLL\\Test Projet\\Civ5Colony\\Civ5Colony\\obj\\",
+        "outputPath": "G:\\Jeux\\vox populis\\DLL\\ProjetGitKraken\\Cours\\Exercice_Class\\Civ5Colony\\Civ5Colony\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

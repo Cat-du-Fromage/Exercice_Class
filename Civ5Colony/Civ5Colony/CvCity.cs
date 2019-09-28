@@ -14,7 +14,7 @@ namespace Civ5Colony
         private int _happiness;
         private int _unhappiness;
         private int _numCorporation;
-        private Corporation _corporation;
+        private List<Corporation> _listCorporation;
         #endregion Private Attributes
 
         #region Constructor
@@ -34,7 +34,34 @@ namespace Civ5Colony
         }
         #endregion Constructor
 
+        #region public methods
+        /// <summary>
+        /// Ajoute une corporation à la ville
+        /// </summary>
+        /// <param name="corporation"></param>
+        public void NewCorporation(Corporation corporation)
+        {
+            if (_listCorporation == null) //vérifie que la liste soit vide
+            {
+                this._listCorporation = new List<Corporation>();
+            }
+
+            this._corporation = corporation;
+            this.PublicOpinion(_corporation.Yield); //appelle la méthode
+        }
+        #endregion public methods
+
         #region private methods
+        /// <summary>
+        /// - Calcul the happiness depending of the number of corporation and their yields
+        /// - Calcul the unhapiness depending of the number of corporation and their yields
+        /// </summary>
+        /// <param name="yield"></param>
+        private void PublicOpinion(int yield)
+        {
+            this._happiness = this._population*(100-(5/100)*yield);
+            this._unhappiness = this._population - this._happiness;
+        }
         #endregion private methods
 
         #region Accessors
