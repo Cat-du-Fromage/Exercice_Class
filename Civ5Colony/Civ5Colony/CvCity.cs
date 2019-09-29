@@ -45,9 +45,8 @@ namespace Civ5Colony
             {
                 this._listCorporation = new List<Corporation>();
             }
-
-            this._corporation = corporation;
-            this.PublicOpinion(_corporation.Yield); //appelle la méthode
+            _listCorporation.Add(corporation);
+            this.PublicOpinion(); //appelle la méthode
         }
         #endregion public methods
 
@@ -57,9 +56,14 @@ namespace Civ5Colony
         /// - Calcul the unhapiness depending of the number of corporation and their yields
         /// </summary>
         /// <param name="yield"></param>
-        private void PublicOpinion(int yield)
+        private void PublicOpinion()
         {
-            this._happiness = this._population*(100-(5/100)*yield);
+            int amountYield = 0;
+            foreach (Corporation corporation in _listCorporation)
+            {
+                amountYield = corporation.Yield + amountYield;
+            }
+            this._happiness = this._population*(100-(5/100)* amountYield);
             this._unhappiness = this._population - this._happiness;
         }
         #endregion private methods
